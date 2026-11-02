@@ -1,0 +1,62 @@
+;     0    1    2    3    4    5    6    7    8    9    A    B    C    D    E    F
+;0    NUL  SOH  STX  ETX  EOT  ENQ  ACK  BEL  BS   TAB  LF   VT   FF   CR   SO   SI
+;1    DLE  DC1  DC2  DC3  DC4  NAK  SYN  ETB  CAN  EM   SUB  ESC  FS   GS   RS   US
+;2    SP   !    "    #    $    %    &    '    (    )    *    +    ,    -    .    /
+;3    0    1    2    3    4    5    6    7    8    9    :    ;    <    =    >    ?
+;4    @    A    B    C    D    E    F    G    H    I    J    K    L    M    N    O
+;5    P    Q    R    S    T    U    V    W    X    Y    Z    [    \    ]    ^    _
+;6    `    a    b    c    d    e    f    g    h    i    j    k    l    m    n    o
+;7    p    q    r    s    t    u    v    w    x    y    z    {    |    }    ~    DEL
+
+00=$
+0a={LF}
+0c={HOME}
+0d={CR}
+17=@
+1a={DOWN}
+1f={CLS}
+20=_
+21=!
+22='
+2A=*
+2C=,
+2D=-
+2E=.
+2F=/
+30=0
+31=1
+32=2
+3A=:
+3C=<
+3E=>
+46=F
+4E=N
+60=Ю
+61=А
+62=Б
+63=Ц
+65=Е
+67=Г
+68=Х
+69=И
+6A=Й
+6B=К
+6C=Л
+6D=М
+6E=Н
+6f=О
+70=П
+71=Я
+72=Р
+73=С
+74=Т
+75=У
+76=Ж
+77=В
+78=Ь
+79=Ы
+7A=З
+7b=Ш
+7C=Э
+7D=Щ
+7E=Ч

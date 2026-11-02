@@ -1,0 +1,1 @@
+..\retroassembler\retroassembler.exe -d -D=$0000,$0000,$048c -C=8080 TOCHKI.GAM-memory-0000-FFFF.bin TOCHKI.LST
