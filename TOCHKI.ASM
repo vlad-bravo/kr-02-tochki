@@ -374,6 +374,7 @@ ENTRY_POINT:
 @040f:
    lhld @01ce
    mvi b,0x00
+@0414:
    mov a,m
    mvi d,0x17
    cmp d
@@ -402,36 +403,38 @@ ENTRY_POINT:
    lhld @01d3
    mov a,h
    cmp d
-   jnz $044c
+   jnz @044c
    mov a,l
    cmp e
-   jz $0467
+   jz @0467
+@044c:
    lhld @01c4
    mov a,l
    cmp b
-   jnz $0461
+   jnz @0461
    lhld @01c6
    dad d
    lxi d,0x004e
    dad d
    mvi b,0x00
-   jmp $0414
-
+   jmp @0414
+@0461:
    xchg
    inx h
    inr b
-   jmp $0414
-
+   jmp @0414
+@0467:
    pop b
    pop d
-   call $f81b
+   call 0xf81b
    cpi 0x01
-   jz $047c
-   call $f81b
+   jz @047c
+@0471:
+   call 0xf81b
    cpi 0xfe
-   jz $0471
-   jmp $02f2
-
+   jz @0471
+   jmp @02f2
+@047c:
    mvi c,0x00
    lhld @01c9
    shld @01c4
