@@ -440,6 +440,6 @@ ENTRY_POINT:
    shld @01c4
    jmp @020a
 @0487:
-   jmp 0xf86c
+   jmp 0xf86c  ; PRINT_PROMPT
 
    jmp ENTRY_POINT
